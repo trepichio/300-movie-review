@@ -1,0 +1,14 @@
+/* line 1, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0; }
+
+/* line 8, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+/* line 12, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+body {
+  font-size: 1.6rem; }

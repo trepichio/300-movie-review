@@ -1,14 +1,127 @@
-/* line 1, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+@charset "UTF-8";
+/* line 3, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
   margin: 0;
   padding: 0; }
 
-/* line 8, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+/* line 10, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
 *, *::before, *::after {
   box-sizing: inherit; }
 
-/* line 12, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+/* line 14, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
 body {
-  font-size: 1.6rem; }
+  font-size: 2.2rem;
+  background: -webkit-linear-gradient(-90deg, #790000, black);
+  background: -moz-linear-gradient(180deg, #790000, black);
+  background: linear-gradient(180deg, #790000, black);
+  color: #000; }
+
+/* line 22, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+p, span.rating {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: justify; }
+
+/* line 29, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+h1, h2 {
+  line-height: 1;
+  margin-top: 0; }
+
+/* line 34, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+h1, h2, h3 {
+  font-family: Trebuchet MS, Arial, sans-serif; }
+
+/* line 38, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+h1 {
+  font-size: 3.2rem; }
+
+/* line 39, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+h2 {
+  font-size: 2.4rem; }
+
+/* line 41, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+h3 {
+  color: #666;
+  font-size: small; }
+
+/* line 46, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+span.rating::before {
+  content: "Rating: ★ ★ ★ ★ ☆"; }
+
+/* line 50, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+span.movie-title {
+  color: red;
+  font-weight: bolder; }
+
+/* line 55, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+.right {
+  float: right;
+  margin-left: 1rem; }
+
+/* line 60, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+.left {
+  float: left;
+  margin-right: 1rem; }
+
+/* line 65, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+.illustration {
+  width: 60%;
+  height: auto; }
+
+/* line 70, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+article#review-of-movie-300 {
+  margin: 8rem;
+  padding: 3.4rem;
+  border: 3px solid #000;
+  background: #fff;
+  color: inherit; }
+  /* line 77, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+  article#review-of-movie-300 figure {
+    margin: 0;
+    padding: 0;
+    font-size: 0; }
+  /* line 81, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+  article#review-of-movie-300 figure img {
+    margin: 1rem 0;
+    width: 100%;
+    border: 1px solid #000; }
+  /* line 89, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+  article#review-of-movie-300 > p:first-of-type:first-letter {
+    float: left;
+    font-size: 6.3rem;
+    margin-top: .6rem;
+    margin-right: .6rem;
+    background-image: url("../../assets/images/tree-of-death.jpg");
+    background-color: #000;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: #fff;
+    padding: 2.5rem;
+    border: 2px solid #790000; }
+  /* line 103, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+  article#review-of-movie-300 > p:first-of-type:first-line {
+    font-variant: small-caps; }
+
+/* line 109, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+ol li#footnote {
+  font-size: small; }
+
+@media screen and (max-width: 800px) {
+  /* line 113, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+  article#review-of-movie-300 {
+    margin: 0;
+    border: 0; } }
+
+@media screen and (max-width: 500px) {
+  /* line 121, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+  article#review-of-movie-300 p {
+    font-size: 1.92rem; }
+  /* line 124, /home/jtrepichio/webDev/300-movie-review/sources/scss/main.scss */
+  .right, .left {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 2rem 0; } }
